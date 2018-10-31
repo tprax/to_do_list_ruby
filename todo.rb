@@ -6,6 +6,8 @@
 # need a way to add a todo to a complete list
 # need a way to loop program
 
+@todo_array = []
+
 def greeting
   puts "Hi welcome to your todo list!"
   puts "please select an option"
@@ -29,19 +31,20 @@ def options
 end
 
 def display_todo
-  puts @selection
 end
 
 def create_todo
-  puts "hello"
+  puts "please enter a todo for your todo list!"
+  my_todo = gets.to_s
+  @todo_array << my_todo
 end
 
 def delete_todo
-  puts "hello"
+  
 end
 
 def complete_todo
-  puts "hello"
+  
 end
 
 
