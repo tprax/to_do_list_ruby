@@ -31,6 +31,7 @@ def options
 end
 
 def display_todo
+  puts @todo_array
 end
 
 def create_todo
@@ -64,3 +65,6 @@ def option_case
 end
 
 greeting
+until @selection === 5
+  options
+end
