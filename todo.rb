@@ -15,6 +15,7 @@ def greeting
   puts "2.) Create a new todo"
   puts "3.) Delete a todo"
   puts "4.) Complete a todo"
+  puts "5.) Cancel"
   @selection = gets.strip.to_i
   option_case
 end
@@ -50,7 +51,10 @@ def create_todo
 end
 
 def delete_todo
-  
+  display_todo
+  puts "please select a todo to delete by its number"
+  selected_todo = gets.to_i - 1
+  @todo_array.delete_at(selected_todo)
 end
 
 def complete_todo
