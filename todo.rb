@@ -31,7 +31,12 @@ def options
 end
 
 def display_todo
-  puts @todo_array
+  puts "Todo List Below"
+  num = 1
+  @todo_array.each do |x|
+    puts num.to_s + ". " + x
+    num += 1
+  end
 end
 
 def create_todo
