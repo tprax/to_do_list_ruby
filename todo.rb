@@ -7,7 +7,7 @@
 # need a way to loop program
 
 @todo_array = []
-
+@complete_array = []
 def greeting
   puts "Hi welcome to your todo list!"
   puts "please select an option"
@@ -58,7 +58,7 @@ def delete_todo
 end
 
 def complete_todo
-  
+  #here we will move the data from one array to another
 end
 
 
