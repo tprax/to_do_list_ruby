@@ -34,7 +34,7 @@ end
 def display_todo
   puts ""
   puts "***********************"
-  puts "Todo List Below"
+  puts "Todo List!"
   num = 1
   @todo_array.each do |x|
     puts num.to_s + ". " + x
